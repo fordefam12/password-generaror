@@ -25,8 +25,8 @@ generateBtn.addEventListener("click", writePassword);
 function generatePassword() {
   // request total length
   var passwordLength = prompt("💡enter the desired amount of characters💡");
-  console.log("password length " + passwordLength);
   
+
   // gives alert if length in not between 8 and 128
   if (password === false) {
     alert("must input!!");
@@ -43,13 +43,13 @@ function generatePassword() {
     // gives prompts to add criteria for password
   } else {
     confirmUpper = confirm("💡do you want to use Upper case letters ?");
-    console.log("upper case " + confirmUpper);
+    
     confirmSpecial = confirm("💡do you want special characters ?");
-    console.log("special character " + confirmSpecial);
+   
     confirmNumber = confirm("💡do you want numbers ?");
-    console.log("numbers " + confirmNumber);
+    
     confirmLower = confirm("💡do you want to use lower case letters ?");
-    console.log("lower case " + confirmLower);
+    
 
     // if no choice is made an alert is given
     if (
