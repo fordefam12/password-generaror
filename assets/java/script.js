@@ -12,7 +12,7 @@ var confirmNumber;
 var confirmSpecial;
 var userChoices;
 var password = "";
-var inputs =[""]
+var inputs = [""];
 
 function writePassword() {
   var password = generatePassword();
