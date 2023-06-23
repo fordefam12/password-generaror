@@ -26,6 +26,7 @@ function generatePassword() {
   // request total length
   var passwordLength = prompt("💡enter the desired amount of characters💡");
   console.log("password length " + passwordLength);
+  
   // gives alert if length in not between 8 and 128
   if (password === false) {
     alert("must input!!");
@@ -60,7 +61,7 @@ function generatePassword() {
       userChoices = alert("💡must make a seelection!!💡");
     }
     // different veriations of choices
-    if (
+    else if (
       confirmLower === true &&
       confirmUpper === true &&
       confirmNumber === true &&
@@ -68,15 +69,10 @@ function generatePassword() {
     ) {
       userChoices = lower.concat(upper, number, special);
       console.log(userChoices);
-    } else if (
-      confirmUpper &&
-      confirmLower &&
-      confirmNumber &&
-      confirmSpecial
-    ) {
+    }
       userChoices = lower.concat(upper, number, special);
       console.log(userChoices);
-    } else if (confirmLower && confirmSpecial && confirmNumber) {
+    } { if (confirmLower && confirmSpecial && confirmNumber) {
       userChoices = lower.concat(special, number);
       console.log(userChoices);
     } else if (confirmUpper && confirmLower && confirmSpecial) {
