@@ -30,5 +30,8 @@ Assignment
   
 
 
+  
+URL
+https://fordefam12.github.io/password-generaror/
 https://github.com/fordefam12/password-generaror
 ![screenshot](<images/Password Generator.png>)
